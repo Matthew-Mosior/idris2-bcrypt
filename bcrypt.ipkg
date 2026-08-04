@@ -1,0 +1,15 @@
+package bcrypt
+
+authors    = "Matthew Mosior"
+brief      = "Idris2 bindings to the bcrypt password hashing algorithm"
+license    = "BSD-3 Clause"
+version    = 0.1.0
+sourcedir  = "src"
+depends    = base
+           , elab-util
+           , elin
+modules    = Crypto.BCrypt
+           , Crypto.BCrypt.FFI
+           , Crypto.BCrypt.Types
+prebuild   = "make -C support"
+preinstall = "make -C support install"

@@ -1,0 +1,5 @@
+[custom.all.bcrypt]
+type = "local"
+path = "."
+ipkg = "bcrypt.ipkg"
+test = "test/test.ipkg"
