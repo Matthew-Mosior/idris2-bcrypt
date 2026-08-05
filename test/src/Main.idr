@@ -43,9 +43,9 @@ test_ValidationFails = do
   ok   <- validatePassword "password2" hash
   case ok of
     True  =>
-      pure ()
-    False =>
       die $ "test_validationFails: hash == \{show hash}, " ++ "ok == \{show ok}"
+    False =>
+      pure ()
 
 ||| Hashing with an existing salt.
 |||
