@@ -35,6 +35,6 @@ jobs:
       - name: Install bcrypt
         run: pack --no-prompt install bcrypt
       - name: Build bcrypt
-        run: pack typecheck bcrypt
+        run: pack --no-prompt typecheck bcrypt
       - name: Test bcrypt
         run: pack --no-prompt test bcrypt
