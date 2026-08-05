@@ -28,6 +28,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          apt-get update
+          apt-get install --yes lld
       - name: Install bcrypt
         run: pack --no-prompt install bcrypt
       - name: Build bcrypt
